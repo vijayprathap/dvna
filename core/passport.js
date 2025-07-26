@@ -34,7 +34,7 @@ module.exports = function (passport) {
                 }
             }).then(function (user) {
                 if (!user) {
-                    return done(null, false, req.flash('danger', 'Invalid Credentials'))
+                    return done(null, false, req.flash('danger', 'Invalid Credentialssss'))
                 }
                 if (!isValidPassword(user, password)) {
                     return done(null, false, req.flash('danger', 'Invalid Credentials'))
